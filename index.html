@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="side-panel">
+        <div class="image-container"><img id="fern-image" src="assets/ferns.jpg" alt="picture of green lush ferns"></div> <div class="side-panel-content">
+            <div class="branding">
+                <img src="/assets/odin_logo.png" alt="Logo of Odin">
+                <p>ODIN</p>
+            </div>
+        </div>
+        <p class="image-credits">Photo by 
+            <a class="credit-links" target="_blank" href="https://unsplash.com/@haliewestphoto">Halie West</a> on 
+            <a class="credit-links" target="_blank" href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a>
+        </p>
+    </div>
+    <div class="main">
+        <div class="heading">
+            <h2>This is not a real online service! You know you need something like this in your life to
+                help you realize your deepest dreams.
+                <br>
+                Sign up now to get started.
+            </h2>
+            <h2>You know you want to.</h2>
+        </div>
+        <div class="form-container">
+            <h2 class="form-header">Let's do this!</h2>
+            <form action="" method="get">
+                <section class="inputs">
+                    <div class="form-row">
+                        <div class="input-field">
+                            <label for="first-name">First Name *</label>
+                            <input type="text" pattern="^[^0-9]+$" required name="first-name" id="first-name">
+                        </div>
+                        <div class="input-field">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" pattern="^[^0-9]+$" required name="last-name" id="last-name">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-field">
+                            <label for="email">Email *</label>
+                            <input type="email" required name="email" id="email">
+                        </div>
+                        <div class="input-field">
+                            <label for="phone-number">Phone Number *</label>
+                            <input type="tel" required name="phone-number" id="phone-number">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-field">
+                            <label for="password">Password *</label>
+                            <input type="password" pattern="^(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$" required name="password" id="password">
+                        </div>
+                        <div class="input-field">
+                            <label for="password-confirmation">Confirm Password *</label>
+                            <input type="password" pattern="^(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$" required name="password-confirmation" id="password-confirmation">
+                        </div>
+                    </div>
+
+
+                </section>
+                <section class="cta">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </section>
+            </form>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
